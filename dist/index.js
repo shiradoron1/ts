@@ -32,3 +32,14 @@ while (num != -1) {
     arr.push(num);
 }
 alert(getAmountOfPositive(arr));
+function sortList(arr) {
+    let numb = 0;
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            let num = 0;
+            num = arr[i];
+            arr[i] = arr[i + 1];
+            arr[i + 1] = num;
+        }
+    }
+}
